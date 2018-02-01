@@ -34,7 +34,7 @@ router.get("/*", function (req, res) {
 
 app.use(router);
 
-const db = process.env.MONGODB_URI || "mongodb://heroku_05197bc6:capoi26rvm5cbuamk6st38i9cf@ds221228.mlab.com:21228/heroku_05197bc6";
+const db = process.env.MONGODB_URI || "mongodb://heroku_9qdvwt3c:u13eqiqc8rqm3no1cni8c09eu0@ds121588.mlab.com:21588/heroku_9qdvwt3c";
 mongoose.connect(db, function (error) {
   if (error) {
     console.error(error);
