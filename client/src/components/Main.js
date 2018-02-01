@@ -126,13 +126,6 @@ class Main extends Component {
                             </div>
                         </div>
                     </div>
-                    <footer>
-                        <hr />
-                        <p className="pull-right">
-                            <i className="fa fa-github" aria-hidden="true"></i>
-                            Proudly built using React.js
-            </p>
-                    </footer>
                 </div>
             </div>
 
