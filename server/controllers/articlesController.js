@@ -10,7 +10,7 @@ module.exports = {
         });
     },
     insert: function (req, res) {
-        console.log("article saved);
+        console.log("article saved");
         console.log("req.body: ", req.body);
         Article.create(req.body).then(function (doc) {
             res.json(doc);
