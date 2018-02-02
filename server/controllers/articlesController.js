@@ -2,7 +2,7 @@ var Article = require("../models");
 
 module.exports = {
     find: function (req, res) {
-        console.log("Gathering saved articles from the db");
+        console.log("finding articles");
         Article.find().then(function (doc) {
             res.json(doc);
         }).catch(function (err) {
@@ -10,7 +10,7 @@ module.exports = {
         });
     },
     insert: function (req, res) {
-        console.log("Adding saved artice to the db");
+        console.log("article saved);
         console.log("req.body: ", req.body);
         Article.create(req.body).then(function (doc) {
             res.json(doc);
@@ -20,7 +20,7 @@ module.exports = {
         });
     },
     delete: function (req, res) {
-        console.log("Deleting a saved article from the db");
+        console.log("article deleted");
         Article.remove({
             _id: req.params.id
         }).then(function (doc) {
